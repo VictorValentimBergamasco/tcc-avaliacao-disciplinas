@@ -1,0 +1,69 @@
+# ============================================================
+#  .gitignore - Sistema Web de Avaliacao de Disciplinas (TCC)
+# ============================================================
+
+# -------- Python / Django (backend_tcc) --------
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.Python
+*.log
+
+# Ambiente virtual
+backend_tcc/venv/
+backend_tcc/.venv/
+venv/
+.venv/
+
+# Variaveis de ambiente com credenciais
+.env
+.env.local
+.env.production
+backend_tcc/.env
+
+# Banco local (caso use SQLite em algum momento)
+*.sqlite3
+*.sqlite3-journal
+
+# Arquivos gerados pelo Django (media/static coletado)
+backend_tcc/staticfiles/
+backend_tcc/media/qrcodes/
+backend_tcc/media/reports/
+
+# -------- Node / React / Vite (frontend_tcc) --------
+**/node_modules/
+frontend_tcc/dist/
+frontend_tcc/dist-ssr/
+frontend_tcc/.vite/
+*.local
+
+# Logs do npm/yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# -------- IDEs e editores --------
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*~
+
+# -------- Sistema operacional --------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -------- Documentos temporarios --------
+~$*.docx
+~$*.xlsx
+~$*.pptx

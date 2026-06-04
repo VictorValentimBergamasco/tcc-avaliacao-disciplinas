@@ -1,0 +1,12 @@
+ALTERAÇÕES IMPLEMENTADAS
+
+1. Criado app apps/reports.
+2. Criado endpoint:
+   GET /api/reports/course/<course_id>/pdf/
+
+3. O relatório PDF inclui cabeçalho, disciplina, professor, respondentes,
+   cálculo amostral, gráficos, porcentagens, média, desvio padrão e comentários.
+
+4. Pacotes adicionados:
+   matplotlib
+   reportlab
