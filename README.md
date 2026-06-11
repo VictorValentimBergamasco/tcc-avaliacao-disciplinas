@@ -22,15 +22,22 @@ Três camadas independentes que se comunicam via API REST (HTTP/JSON):
 
 Geração de PDF (ReportLab + Matplotlib) e QR Code (biblioteca `qrcode`) ficam no servidor.
 
+## Monografia
+
+O documento completo do TCC (57 páginas, formato ABNT) está em [`Monografia_TCC_Victor.pdf`](Monografia_TCC_Victor.pdf). Inclui introdução, levantamento de requisitos, modelagem UML, arquitetura, implementação detalhada, segurança, testes, hospedagem, limitações e referências bibliográficas, além do Apêndice B com 21 listagens de código dos módulos principais.
+
 ## Estrutura do repositório
 
 ```
 TCC/
-├── backend_tcc/          Servidor Django (porta 8000)
-├── frontend_tcc/         Aplicação React (porta 5173)
-├── Documentacao_Sistema_TCC.pdf   Documentação técnica detalhada
-├── iniciar-sistema.bat   Atalho para iniciar os dois servidores no Windows
-└── README.md             Este arquivo
+├── backend_tcc/                 Servidor Django (porta 8000)
+├── frontend_tcc/                Aplicação React (porta 5173)
+├── typst/figuras/               Diagramas UML, ER e sequência (PNG)
+├── Monografia_TCC_Victor.pdf    Monografia completa do TCC
+├── Documentacao_Sistema_TCC.pdf Documentação técnica detalhada
+├── unicamp.png                  Brasão da UNICAMP (usado nas capas)
+├── iniciar-sistema.bat          Atalho para iniciar os dois servidores
+└── README.md                    Este arquivo
 ```
 
 Para instruções específicas, veja [`backend_tcc/README.md`](backend_tcc/README.md) e [`frontend_tcc/README.md`](frontend_tcc/README.md).
@@ -78,11 +85,13 @@ Para instruções específicas, veja [`backend_tcc/README.md`](backend_tcc/READM
 
 ## Documentação técnica
 
-Para detalhes de cada parte do código (modelos, views, fluxos), consulte o arquivo [`Documentacao_Sistema_TCC.pdf`](Documentacao_Sistema_TCC.pdf) — 21 páginas com diagramas, endpoints e descrição de todos os fluxos.
+Para detalhes de cada parte do código (modelos, views, fluxos), consulte o arquivo [`Documentacao_Sistema_TCC.pdf`](Documentacao_Sistema_TCC.pdf) — diagramas, endpoints e descrição de todos os fluxos, com trechos de código em syntax highlighting.
 
 ## Vídeo demonstrativo
 
-[Adicionar link após gravação]
+Vídeo percorrendo o ciclo completo do sistema — login do admin, cadastro de professor e disciplina, primeiro login do professor com troca de senha, escaneamento do QR Code, submissão anônima e geração do relatório PDF.
+
+Disponível em: [https://youtu.be/Vi92iTVklQ8](https://youtu.be/Vi92iTVklQ8)
 
 ## Licença
 

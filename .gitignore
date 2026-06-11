@@ -67,3 +67,15 @@ desktop.ini
 ~$*.docx
 ~$*.xlsx
 ~$*.pptx
+
+# -------- Artefatos locais de uso pessoal --------
+Roteiro_Video.md
+Monografia_TCC_Victor.docx
+Monografia_TCC_Victor_v2.docx
+
+# -------- Codigo-fonte da monografia em Typst (nao publicar) --------
+typst/*.typ
+typst/*.bib
+
+# -------- Pasta figuras da raiz (versao em typst/figuras/ ja basta) --------
+/figuras/
